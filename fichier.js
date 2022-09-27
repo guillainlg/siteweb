@@ -6,7 +6,7 @@ var callBackGetSuccess1 = function(data) {
 	var element4 = document.getElementById("f4");
 	var element5 = document.getElementById("f5");
 	var element6 = document.getElementById("f6");
-	element1.innerHTML = "Gare Rives -> Campus 2"
+	element1.innerHTML = "Gare Rives => Campus 2"
 	element2.innerHTML = data.records[0].fields.horaire_depart_theorique;
 	element3.innerHTML = data.records[1].fields.horaire_depart_theorique;
 	element4.innerHTML = data.records[2].fields.horaire_depart_theorique;
@@ -37,7 +37,7 @@ var callBackGetSuccess2 = function(data) {
 	var element4 = document.getElementById("f10");
 	var element5 = document.getElementById("f11");	
 	var element6 = document.getElementById("f12");
-	element1.innerHTML = "Campus2 -> Gare Rives"
+	element1.innerHTML = "Campus2 => Gare Rives"
 	element2.innerHTML = data.records[0].fields.horaire_depart_theorique;
 	element3.innerHTML = data.records[1].fields.horaire_depart_theorique;
 	element4.innerHTML = data.records[2].fields.horaire_depart_theorique;
