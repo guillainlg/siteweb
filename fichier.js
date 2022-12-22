@@ -32,7 +32,11 @@ var callBackGetSuccess1 = function(data) {
 	var element1 = document.getElementById("p1");
 	var element2 = document.getElementById("p2");
 	var element3 = document.getElementById("p3");
-	element1.innerHTML = data.records[0].fields.horaire_depart_theorique;
+	var L = data.records[0].fields.horaire_depart_theorique;
+	if (L[0] == '2' && L[1] == '4') {
+		var L = L.replace('24', '00');
+	}
+	element1.innerHTML = L;
 	element2.innerHTML = data.records[1].fields.horaire_depart_theorique;
 	element3.innerHTML = data.records[2].fields.horaire_depart_theorique;
 }
