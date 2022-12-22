@@ -58,9 +58,9 @@ p {
 	color: mintcream;
 	font-family: helvetica;
 	font-weight: bold;
-	font-size: 50px;
-	position: relative;
+	font-size: 90px;
 	text-align: center;
+	margin: 14;
 }
 
 span#horloge {
