@@ -18,6 +18,41 @@ div {
 	padding: 1px;
 }
 
+.div_buttons {
+}
+
+div#hour_button {
+	position: relative;
+	float:left;
+	margin: auto;
+	margin-left: 67px;
+	margin-top: 15px;
+	width: 70px;
+	height: 70px;
+	border-radius: 10px;
+	padding: 1px;
+	background-color: #5d6d7e;
+	cursor: pointer;
+}
+
+div#hour_button:hover {
+	opacity: 80%;
+	transition-duration: 0.3s;
+}
+
+div#hour_button>p {
+	position: absolute;
+	margin-left: 0;
+	margin-bottom: 0;
+	margin-top: 0;
+	text-align: center;
+	color: whitesmoke;
+	font-size: 45px;
+	width: 70px;
+	height: 70px;
+	top: 12px;
+}
+
 div#r1 {
 	background-color: #5d6d7e;
 	height: 370px;
@@ -35,6 +70,7 @@ div#n1 {
 
 div#n1:hover {
 	background-color: #008f65;
+	transition-duration: 0.3s;
 }
 
 div#n2 {
@@ -44,6 +80,7 @@ div#n2 {
 
 div#n2:hover {
 	background-color: #d55cd0;
+	transition-duration: 0.3s;
 }
 
 h1 {
