@@ -33,9 +33,9 @@ var init_hours1 = function(data) {
 	var element3 = document.getElementById("p3");
 	var L = [];
 	L = create_hours(data);
-	element1.innerHTML = L[0] + " > " + L[1];
-	element2.innerHTML = L[1] + " > " + L[3];
-	element3.innerHTML = L[2] + " > " + L[5];
+	element1.innerHTML = L[0] + " - " + L[1];
+	element2.innerHTML = L[1] + " - " + L[3];
+	element3.innerHTML = L[2] + " - " + L[5];
 }
 
 var init_hours2 = function(data) {
@@ -45,9 +45,9 @@ var init_hours2 = function(data) {
 	var L = [];
 	L = create_hours(data);
 
-	element4.innerHTML = L[0] + " > " + L[1];
-	element5.innerHTML = L[1] + " > " + L[3];
-	element6.innerHTML = L[2] + " > " + L[5];
+	element4.innerHTML = L[0] + " - " + L[1];
+	element5.innerHTML = L[1] + " - " + L[3];
+	element6.innerHTML = L[2] + " - " + L[5];
 }
 
 function refresh(){
@@ -123,9 +123,9 @@ function change_hours(hour,ride) {
 		L[i-1] = L[i-1].join(":");
 	}
 
-	element1.innerHTML = L[0] + " > " + L[1];
-	element2.innerHTML = L[2] + " > " + L[3];
-	element3.innerHTML = L[4] + " > " + L[5];
+	element1.innerHTML = L[0] + " - " + L[1];
+	element2.innerHTML = L[2] + " - " + L[3];
+	element3.innerHTML = L[4] + " - " + L[5];
 }
 
 function create_hours(data) {
