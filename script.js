@@ -34,8 +34,8 @@ var init_hours1 = function(data) {
 	var L = [];
 	L = create_hours(data);
 	element1.innerHTML = L[0] + " - " + L[1];
-	element2.innerHTML = L[1] + " - " + L[3];
-	element3.innerHTML = L[2] + " - " + L[5];
+	element2.innerHTML = L[2] + " - " + L[3];
+	element3.innerHTML = L[4] + " - " + L[5];
 }
 
 var init_hours2 = function(data) {
@@ -46,8 +46,8 @@ var init_hours2 = function(data) {
 	L = create_hours(data);
 
 	element4.innerHTML = L[0] + " - " + L[1];
-	element5.innerHTML = L[1] + " - " + L[3];
-	element6.innerHTML = L[2] + " - " + L[5];
+	element5.innerHTML = L[2] + " - " + L[3];
+	element6.innerHTML = L[4] + " - " + L[5];
 }
 
 function refresh(){
@@ -88,7 +88,7 @@ function change_hours(hour,ride) {
 		var element1 = document.getElementById("p4");
 		var element2 = document.getElementById("p5");
 		var element3 = document.getElementById("p6");
-		L = [H[1][hour][0], H[1][hour][0], H[1][hour][1], H[1][hour][1], H[1][hour][2], H[1][hour][2]];
+		L = [H[0][hour][0], H[0][hour][0], H[0][hour][1], H[0][hour][1], H[0][hour][2], H[0][hour][2]];
 	} else {
 		var element1 = document.getElementById("p1");
 		var element2 = document.getElementById("p2");
@@ -130,11 +130,14 @@ function change_hours(hour,ride) {
 
 function create_hours(data) {
 	var L = [];
+	var k = 0;
 	for (let i = 1; i < 6; i+=2) {
 		// Récupère les horaires
-		hour = data.records[i].fields.horaire_depart_theorique;
+		hour = data.records[k].fields.horaire_depart_theorique;
 		L.push(hour.split(":"));
 		L.push(hour.split(":"));
+		k++;
+
 		// Convertis en int
 		for (let j = 0; j < 3; j++) { L[i][j] = Number(L[i][j]); }
 

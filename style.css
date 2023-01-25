@@ -1,5 +1,5 @@
 html {
-	background-color: #252525;
+	background-color: #F9F6EE;
 }
 
 body {
@@ -34,12 +34,12 @@ div#hour_button {
 	height: 100px;
 	border-radius: 10px;
 	padding: 1px;
-	background-color: #5d6d7e;
+	background-color: #0063aa;
 	cursor: pointer;
 }
 
 div#hour_button:hover {
-	opacity: 80%;
+	background-color: #00538f;
 	transition-duration: 0.3s;
 }
 
@@ -57,33 +57,23 @@ div#hour_button>p {
 }
 
 div#r1 {
-	background-color: #5d6d7e;
+	background-color: #0063aa;
 	height: 370px;
 }
 
 div#r2 {
-	background-color:  #5d6d7e ;
+	background-color:  #0063aa;
 	height: 370px;
 }
 
 div#n1 {
-	background-color: #00a877;
+	background-color: #696969;
 	cursor: pointer;
-}
-
-div#n1:hover {
-	background-color: #008f65;
-	transition-duration: 0.3s;
 }
 
 div#n2 {
-	background-color: orchid;
+	background-color: #696969;
 	cursor: pointer;
-}
-
-div#n2:hover {
-	background-color: #d55cd0;
-	transition-duration: 0.3s;
 }
 
 h1 {
@@ -104,10 +94,12 @@ p {
 }
 
 span#horloge {
-	color: mintcream;
+	color: #0063aa;
 	font-size: 200px;
+	font-family: helvetica;
+	font-weight: bold;
 	border-radius: 10px;
     display: table;
     margin: 0 auto;
-    margin-top: 125px;
+    margin-top: 50px;
 }
